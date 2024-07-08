@@ -11,16 +11,23 @@ public class Activity2 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter a number:");
-        int number = scanner.nextInt();
-
-        if(number % 2 == 0) {
-            System.out.println(number + " is even number.");
+        int num = scanner.nextInt();
+        
+        if(num % 2 == 0) {
+            System.out.println(num + " is even number.");
         } else {
-            System.out.println(number + " is odd number.");
+            System.out.println(num + " is odd number.");
         } 
 
-        if(number > 0) {
-            System.out.println(" is positve");
+        if(num > 0) {
+            System.out.println(num + " is positve");
         }
+        else if (num < 0) {
+            System.out.println(num + "is negative");
+        }
+        else {
+            System.out.println("The number is zero.");
+        }
+        
     }
 }
